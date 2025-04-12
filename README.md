@@ -14,7 +14,8 @@ This is the detailed step by step process to setup you raspberry pi
 6. and then next without any customization (because we do this later due to some issue with us)  
 7. after installation remove you sd-card and follow next steps.  
 **step 3:(creating wifi config. file to connect your pi to your hotspot)**  
-**remember that your can edit anything in sd card with contains os. so, Do this steps in another folder.**  
+**!!remember that your cannot edit anything in sd card with contains os. so, Do this steps in another folder.**
+**!!also set your hotspot to 2.4Ghz,because at 5Ghz raspbeery will not connect to your hotspot**    
 1. in any folder create a file wpa_supplicant.conf with no extension.  
 leftclick on free space in your folder>new>text document>rename it(wpa_supplicant.conf)and also make sure to remove .txt extention.  
 2. tick this thing to make sure there is no extenstion in your file.  
@@ -33,8 +34,8 @@ network={
 ```
 5. feed your ssid and password and
 6. before saving line ending should be LF not CRLF
-**if you are using vs code in lower left corner you will se either LF or CRLF ,IF CRLF make it LF**
-**and if you are using notepad++ go to edit>EOL conversion>select LF**
+**!!if you are using vs code in lower left corner you will se either LF or CRLF ,IF CRLF make it LF**
+**!!and if you are using notepad++ go to edit>EOL conversion>select LF**
 ![Screenshot 2025-04-12 121230](https://github.com/user-attachments/assets/66654ecb-fc34-45c0-b424-89e57fde6223)
 ![Screenshot 2025-04-12 121430](https://github.com/user-attachments/assets/5102a560-8d8b-4cbe-ab31-97f08fb115c7)
 **step 4:(creating userconf file for setting username and password of raspberrypi)**
@@ -62,7 +63,7 @@ example- raspberry:$6$MQk.VqZJgjdMk0az$kpR7ttBc1QAXd5CqywHFjtqj.RDHJbXFFKBKOCraI
 2. just like previous file create file ssh with no extension(remove.txt){where we pasted our other files}
 3.  and now all set eject your sd card from your laptop and insert into raspberry
 4.  **power your pi and wait for 5-10min** it will connected to your hotspot.
-**if not try again this process carefully**  
+**!!if not try again this process carefully**  
    **DISCLAIMER**  
     -dont shutdown your pi by unpluging it.it may cause corruption of os.  
     -use command sudo shutdown now to shutdown it and unlug it when geen led turn off.  
